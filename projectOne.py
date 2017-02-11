@@ -4,7 +4,7 @@
 import explorerhat
 import time
 
-count = 0
+
 
 def flash(channel, event):
 	explorerhat.light.red.on()
@@ -22,6 +22,8 @@ def flash(channel, event):
 	explorerhat.light.blue.off()
 	time.sleep(1)
 	explorerhat.light.yellow.off()
+
+count=0
 
 def disco(channel, event):
 	while (count < 20):
