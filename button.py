@@ -8,15 +8,15 @@ GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(2,GPIO.OUT)
 GPIO.output(2,GPIO.HIGH)
 
-state = False
+state = 0
 
-def switch:
-	if state == False
+def switch():
+	if state == 0:
 		GPIO.output(2,GPIO.LOW)
-		state = True
-	else
+		state = 1
+	else:
 		GPIO.output(2,GPIO.HIGH)
-		state = False
+		state = 0
 
 try:
   while True:
