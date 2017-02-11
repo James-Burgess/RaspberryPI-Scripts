@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 
 # init list with pin numbers
 
-pinList = [4, 5, 6, 7, 8, 9, 10, 11]
+pinList = [2, 3, 4, 17, 27, 22, 10, 9]
 
 # loop through pins and set mode and state to 'low'
 
@@ -19,36 +19,40 @@ for i in pinList:
 SleepTimeL = 2
 
 # main loop
+GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-try:
-  GPIO.output(4, GPIO.LOW)
-  print "ONE"
-  time.sleep(SleepTimeL); 
-  GPIO.output(5, GPIO.LOW)
-  print "TWO"
-  time.sleep(SleepTimeL);  
-  GPIO.output(6, GPIO.LOW)
-  print "THREE"
-  time.sleep(SleepTimeL);
-  GPIO.output(7, GPIO.LOW)
-  print "FOUR"
-  time.sleep(SleepTimeL);
-  GPIO.output(8, GPIO.LOW)
-  print "FIVE"
-  time.sleep(SleepTimeL);
-  GPIO.output(9, GPIO.LOW)
-  print "SIX"
-  time.sleep(SleepTimeL);
-  GPIO.output(10, GPIO.LOW)
-  print "SEVEN"
-  time.sleep(SleepTimeL);
-  GPIO.output(11, GPIO.LOW)
-  print "EIGHT"
-  time.sleep(SleepTimeL);
-  GPIO.cleanup()
-  print "Good bye!"
+while True:
+  input_state = GPIO.input(11)
+    if input_state == False:
+      GPIO.output(2, GPIO.LOW)
+      print "ONE"
+      time.sleep(SleepTimeL); 
+      GPIO.output(3, GPIO.LOW)
+      print "TWO"
+      time.sleep(SleepTimeL);  
+      GPIO.output(4, GPIO.LOW)
+      print "THREE"
+      time.sleep(SleepTimeL);
+      GPIO.output(17, GPIO.LOW)
+      print "FOUR"
+      time.sleep(SleepTimeL);
+      GPIO.output(27, GPIO.LOW)
+      print "FIVE"
+      time.sleep(SleepTimeL);
+      GPIO.output(22, GPIO.LOW)
+      print "SIX"
+      time.sleep(SleepTimeL);
+      GPIO.output(10, GPIO.LOW)
+      print "SEVEN"
+      time.sleep(SleepTimeL);
+      GPIO.output(9, GPIO.LOW)
+      print "EIGHT"
+      time.sleep(SleepTimeL);
+      GPIO.cleanup()
+      print "Good bye!"
 
 # End program cleanly with keyboard
+
 except KeyboardInterrupt:
   print "  Quit"
 
