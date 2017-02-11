@@ -16,71 +16,44 @@ for i in pinList:
 
 # time to sleep between operations in the main loop
 
-SleepTimeL = 2
+SleepTimeL = .5
 
-# main loop
-<<<<<<< HEAD
+#setup button
+
 GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+#set button to trigger loop
 
 while True:
   input_state = GPIO.input(11)
-    if input_state == False:
+  if input_state == False:
+    try:
       GPIO.output(2, GPIO.LOW)
-      print "ONE"
-      time.sleep(SleepTimeL); 
-      GPIO.output(3, GPIO.LOW)
-      print "TWO"
-      time.sleep(SleepTimeL);  
-      GPIO.output(4, GPIO.LOW)
-      print "THREE"
-      time.sleep(SleepTimeL);
-      GPIO.output(17, GPIO.LOW)
-      print "FOUR"
-      time.sleep(SleepTimeL);
-      GPIO.output(27, GPIO.LOW)
-      print "FIVE"
-      time.sleep(SleepTimeL);
-      GPIO.output(22, GPIO.LOW)
-      print "SIX"
-      time.sleep(SleepTimeL);
-      GPIO.output(10, GPIO.LOW)
-      print "SEVEN"
-      time.sleep(SleepTimeL);
-      GPIO.output(9, GPIO.LOW)
-      print "EIGHT"
-      time.sleep(SleepTimeL);
-      GPIO.cleanup()
-      print "Good bye!"
-=======
-
-try:
-  GPIO.output(2, GPIO.LOW)
-  print "ONE"
-  time.sleep(SleepTimeL); 
-  GPIO.output(3, GPIO.LOW)
-  print "TWO"
-  time.sleep(SleepTimeL);  
-  GPIO.output(4, GPIO.LOW)
-  print "THREE"
-  time.sleep(SleepTimeL);
-  GPIO.output(17, GPIO.LOW)
-  print "FOUR"
-  time.sleep(SleepTimeL);
-  GPIO.output(27, GPIO.LOW)
-  print "FIVE"
-  time.sleep(SleepTimeL);
-  GPIO.output(22, GPIO.LOW)
-  print "SIX"
-  time.sleep(SleepTimeL);
-  GPIO.output(10, GPIO.LOW)
-  print "SEVEN"
-  time.sleep(SleepTimeL);
-  GPIO.output(9, GPIO.LOW)
-  print "EIGHT"
-  time.sleep(SleepTimeL);
-  GPIO.cleanup()
-  print "Good bye!"
->>>>>>> 6c2bf3ebc55b82831fb94c4ceda61b913cda7d78
+    print "ONE"
+    time.sleep(SleepTimeL); 
+    GPIO.output(3, GPIO.LOW)
+    print "TWO"
+    time.sleep(SleepTimeL);  
+    GPIO.output(4, GPIO.LOW)
+    print "THREE"
+    time.sleep(SleepTimeL);
+    GPIO.output(17, GPIO.LOW)
+    print "FOUR"
+    time.sleep(SleepTimeL);
+    GPIO.output(27, GPIO.LOW)
+    print "FIVE"
+    time.sleep(SleepTimeL);
+    GPIO.output(22, GPIO.LOW)
+    print "SIX"
+    time.sleep(SleepTimeL);
+    GPIO.output(10, GPIO.LOW)
+    print "SEVEN"
+    time.sleep(SleepTimeL);
+    GPIO.output(9, GPIO.LOW)
+    print "EIGHT"
+    time.sleep(SleepTimeL);
+    GPIO.cleanup()
+    print "Good bye!"
 
 # End program cleanly with keyboard
 
