@@ -10,20 +10,20 @@ ly = explorerhat.light.yellow
 lg = explorerhat.light.green
 
 while True:
-	lg(on)
+	lg.on()
 	time.sleep(.5)
-	lb(on)
+	lb.on()
 	time.sleep(.5)
-	ly(on)
+	ly.on()
 	time.sleep(.5)
-	lg(on)
+	lg.on()
 	time.sleep(.5)
 
-	lg(off)
+	lg.off()
 	time.sleep(.5)
-	lb(off)
+	lb.off()
 	time.sleep(.5)
-	ly(off)
+	ly.off()
 	time.sleep(.5)
-	lg(off)
+	lg.off()
 	time.sleep(.5)
