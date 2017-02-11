@@ -28,32 +28,32 @@ while True:
   input_state = GPIO.input(11)
   if input_state == False:
     try:
-        GPIO.output(2, GPIO.LOW)
-	    print "ONE"
-	    time.sleep(SleepTimeL); 
-	    GPIO.output(3, GPIO.LOW)
-	    print "TWO"
-	    time.sleep(SleepTimeL);  
-	    GPIO.output(4, GPIO.LOW)
-	    print "THREE"
-	    time.sleep(SleepTimeL);
-	    GPIO.output(17, GPIO.LOW)
-	    print "FOUR"
-	    time.sleep(SleepTimeL);
-	    GPIO.output(27, GPIO.LOW)
-	    print "FIVE"
-	    time.sleep(SleepTimeL);
-	    GPIO.output(22, GPIO.LOW)
-	    print "SIX"
-	    time.sleep(SleepTimeL);
-	    GPIO.output(10, GPIO.LOW)
-	    print "SEVEN"
-	    time.sleep(SleepTimeL);
-	    GPIO.output(9, GPIO.LOW)
-	    print "EIGHT"
-	    time.sleep(SleepTimeL);
-	    GPIO.cleanup()
-	    print "Good bye!"
+      GPIO.output(2, GPIO.LOW)
+      print "ONE"
+      time.sleep(SleepTimeL); 
+      GPIO.output(3, GPIO.LOW)
+      print "TWO"
+      time.sleep(SleepTimeL);  
+      GPIO.output(4, GPIO.LOW)
+      print "THREE"
+      time.sleep(SleepTimeL);
+      GPIO.output(17, GPIO.LOW)
+      print "FOUR"
+      time.sleep(SleepTimeL);
+      GPIO.output(27, GPIO.LOW)
+      print "FIVE"
+      time.sleep(SleepTimeL);
+      GPIO.output(22, GPIO.LOW)
+      print "SIX"
+      time.sleep(SleepTimeL);
+      GPIO.output(10, GPIO.LOW)
+      print "SEVEN"
+      time.sleep(SleepTimeL);
+      GPIO.output(9, GPIO.LOW)
+      print "EIGHT"
+      time.sleep(SleepTimeL);
+      GPIO.cleanup()
+      print "Good bye!"
 
 # End program cleanly with keyboard
 
