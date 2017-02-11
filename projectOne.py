@@ -22,4 +22,4 @@ def ohai(channel, event):
 	explorerhat.light.yellow.off()
 
 while True:	
-	if explorerhat.touch.one.pressed(ohai)
+	explorerhat.touch.one.pressed(ohai)
