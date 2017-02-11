@@ -35,4 +35,4 @@ def disco(channel, event):
 
 while True:	
 	explorerhat.touch.one.pressed(flash)
-	explorerhat.touch.two.pressed(disco)
+	explorerhat.touch.one.held(disco)
