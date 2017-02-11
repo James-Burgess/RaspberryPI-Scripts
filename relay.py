@@ -57,8 +57,8 @@ while True:
 
 # End program cleanly with keyboard
 
-except KeyboardInterrupt:
-  print "  Quit"
+    except KeyboardInterrupt:
+      print "  Quit"
 
   # Reset GPIO settings
   GPIO.cleanup()
