@@ -26,4 +26,4 @@ while True:
 	ly.off()
 	time.sleep(.5)
 	lg.off()
-	time.sleep(.5)
+	time.sleep(3)
