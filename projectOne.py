@@ -5,9 +5,6 @@ import explorerhat
 import time
 
 def ohai(channel, event):
-	print("Hey you pressed my buttons, number: ()".format(channel))
-
-while True:
 	explorerhat.light.red.on()
 	time.sleep(1)
 	explorerhat.light.green.on()
@@ -24,6 +21,5 @@ while True:
 	time.sleep(1)
 	explorerhat.light.yellow.off()
 
-
-
-	explorerhat.touch.one.pressed(ohai)
+while True:	
+	if explorerhat.touch.one.pressed(ohai)
